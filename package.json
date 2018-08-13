@@ -1,0 +1,16 @@
+{
+    "name": "jjs-project",
+    "version": "1.0.0",
+    "description": "JJS Project",
+    "scripts": {
+        "start": "node app"
+    },
+    "dependencies": {
+        "express": "^4.16.3",
+        "pug": "^2.0.3",
+        "socketio": "^1.0.0"
+    },
+    "bin": {
+        "jjs-project": "./bin/cri"
+    }
+}

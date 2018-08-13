@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		title JJS Project
+		link(rel='stylesheet', href='/client.css')
+	body
+		#slide
+			each image in slideBase64Urls
+				img.slide__item(src=image)
+
+		script(src='/socket.io/socket.io.js')
+		script
+			- window.maxSlide = slideBase64Urls.length
+		script(src='/client.js')

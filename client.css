@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+body, html {
+	margin: 0;
+	overflow: hidden;
+}
+
+#slide {
+	width: 100vw;
+	height: 100vh;
+}
+
+.slide__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.slide__item--show {
+	opacity: 1;
+}
