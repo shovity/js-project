@@ -6,6 +6,7 @@
 body, html {
 	margin: 0;
 	overflow: hidden;
+	font-family: roboto, sans-serif;
 }
 
 #slide {
@@ -15,13 +16,30 @@ body, html {
 
 .slide__item {
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
 	width: 100%;
 	opacity: 0;
+	transform: translateY(-50%);
 	transition: opacity .3s ease-in-out;
 }
 
 .slide__item--show {
 	opacity: 1;
+}
+
+.hint {
+	padding: 20px;
+}
+
+.controls {
+	position: fixed;
+	display: flex;
+	background: rgba(0, 0, 0, 0.7);
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 250px;
+	-webkit-clip-path: polygon(0 100%, 0 60%, 100% 0, 100% 100%);
+	clip-path: polygon(0 100%, 0 60%, 100% 0, 100% 100%);
 }

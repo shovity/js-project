@@ -2,7 +2,12 @@ doctype html
 html
 	head
 		title JJS Project
+		meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+		link(rel='stylesheet', href='/client.css')
 	body
-		p remote
+		.hint Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero quia sunt nisi labore, obcaecati laborum exercitationem. A totam esse unde. Veniam sequi accusantium provident, velit nesciunt ipsam ea impedit.
+		.controls#controls
 		script(src='/socket.io/socket.io.js')
+		script.
+			window.itemsLength = #{items.length}
 		script(src='/client.js')

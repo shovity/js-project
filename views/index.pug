@@ -2,13 +2,19 @@ doctype html
 html
 	head
 		title JJS Project
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		link(rel='stylesheet', href='/client.css')
 	body
 		#slide
-			each image in slideBase64Urls
-				img.slide__item(src=image)
+			each item in items
+				if item.type === 'image'
+					img.slide__item(src=item.url)
+				else if item.type === 'video'
+					.slide__item not suport video yet
+				else
+					.slide__item not suport ext #{item.ext}
 
 		script(src='/socket.io/socket.io.js')
-		script
-			- window.maxSlide = slideBase64Urls.length
+		script.
+			window.itemsLength = #{items.length}
 		script(src='/client.js')
